@@ -14,7 +14,6 @@
         <h1>Swaggie</h1>
     </nav>
     
-    
     <div class="featured">
         <h1>Popular:</h1>
         <div class="column">
@@ -45,7 +44,7 @@
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-            </a>
+          </a>
         </div>
         <div class="column">
           <a href="games/soccer-random/">
@@ -59,43 +58,30 @@
             <div class="play-button">
                 <i class="fa-solid fa-play"></i>
             </div>
-              
           </a>
-        </div>
         </div>
     </div>
 
     <div class="content">
-
-    <hr>
-        
-    
-
+        <hr>
         <div id="games">
             <a href="games/basketball-stars"><img src="games/basketball-stars/assets/images/basketball-stars.png" alt="8ball-basketball-stars"></a>
             <a href="games/baldis-basics"><img src="games/baldis-basics/icon.png" alt="baldis-basics"></a>
             <a href="games/geometrydash"><img src="games/geometrydash/download.jpg" alt="geometrydash"></a>
-            <a href="games/basketball-legends-2020"><img src="games/basketball-legends-2020/icon.png" alt="basketball-legends-2020""></a>
+            <a href="games/basketball-legends-2020"><img src="games/basketball-legends-2020/icon.png" alt="basketball-legends-2020"></a>
             <a href="games/rooftop-snipers"><img src="games/rooftop-snipers/img/thumb.png" alt="rooftop-snipers"></a>
             <a href="games/worlds-hardest-game"><img src="games/worlds-hardest-game/images/splash.jpg" alt="worlds-hardest-game"></a>
             <a href="games/vex7/"><img src="games/vex7/0c454c9562d249d28ba3a2b50564042c-512x512.jpg" alt="vex7"></a>
         </div>
-        </div>
+    </div>
 
-    <html>
-      <head>
-        <style>
-          button {
-            margin-top: 20px; /* Adjust the margin-top value as needed */
-          }
-        </style>
-      </head>
-      <body>
-        <button>Play Now</button>
-        <script>
-          var url = "https://swagger111.github.io/Swaggerr111.github.io/";
+    <!-- Button to open GitHub site -->
+    <button onclick="openNewWindow()">Open GitHub Site</button>
 
-          function openNewWindow() {
+    <script>
+        var url = "https://swagger111.github.io/Swaggerr111.github.io/";
+
+        function openNewWindow() {
             var win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
@@ -106,19 +92,9 @@
             iframe.style.margin = '0';
             iframe.src = url;
             win.document.body.appendChild(iframe);
-          }
+        }
+    </script>
 
-          document.querySelector('button').onclick = function() {
-            openNewWindow();
-            document.querySelector('button').style.background = 'grey'; // corrected typo here
-            document.querySelector('button').innerHTML = "Play Now";
-          };
-        </script>
-      </body>
-    </html>
-
-    
+    <script src="script.js"></script>
 </body>
 </html>
-
-<script src="script.js"></script>
